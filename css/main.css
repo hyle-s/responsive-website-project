@@ -1,6 +1,5 @@
 /*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
 
-/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
 /*
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
@@ -84,17 +83,25 @@ textarea {
 }
 
 /* ==========================================================================
-   Author's custom styles
+   Browser Upgrade Prompt
    ========================================================================== */
 
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
 
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
 .content-wrapper {
   width: 90%;
-  margin: 0;
+  margin: 50px 0;
 }
 
 /* -------------------- Base Header - Footer Styles -------------------- */
-
 header {
   display: flex;
   justify-content: center;
@@ -161,14 +168,12 @@ footer .copywright {
 }
 
 * -------------------- Mobile Styles - Homepage -------------------- */
-
 /* Hero Area */
 
 .hero-area {
   display: flex;
   justify-content: center;
 }
-
 
 /* Aside */
 
@@ -185,7 +190,7 @@ aside {
 }
 
 .features h2 {
-    margin-bottom: 60px;
+  margin-bottom: 60px;
 }
 
 .features article {
@@ -216,7 +221,7 @@ aside {
 }
 
 .reviews h3 {
-  width: 51%;
+  width: 55%;
   margin: 20px 0;
 }
 
@@ -238,8 +243,6 @@ aside {
   justify-content: center;
 }
 
-
-
 /* ==========================================================================
    FAQ Page
    ========================================================================== */
@@ -258,7 +261,7 @@ aside {
 }
 
 .faq h2 {
-  margin: 20px 0;
+  margin-bottom: 40px;
 }
 
 .faq-content {
@@ -353,8 +356,138 @@ aside {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768px) {
+  /*Tablet styles here*/
+
+  /* General styles */
+  .content-wrapper {
+    max-width: 640px;
+    margin: 100px 0;
+  }
+
+  /* Header */
+  header {
+    padding: 33px 0;
+  }
+
+  header .content-wrapper {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  header nav {
+    width: 20%;
+  }
+
+  header nav ul {
+    justify-content: space-between;
+  }
+
+  .header-divider {
+    display: none;
+  }
+
+  /* Hero Area */
+
+  /* Aside */
+  aside .content-wrapper {
+    margin: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+  }
+
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+    width: 40%;
+    margin: 0;
+  }
+
+  /* Features */
+  .features article {
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    flex-basis: 50%;
+  }
+
+  .features .features-item-description {
+    width: 50%;
+  }
+
+  /* Reviews */
+  .reviews article {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .reviews article div {
+    width: 49%;
+  }
+
+  /* Footer */
+  footer .content-wrapper {
+    width: 65%;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  footer .contact {
+    margin-bottom: 0;
+  }
+
+  footer .copyright {
+    width: 100%;
+  }
+
+  /* ==========================================================================
+   About Page
+   ========================================================================== */
+
+  .mission-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 20px;
+  }
+
+  .mission-content p {
+    width: 45%;
+  }
+
+  .contact-section .content-wrapper h2 {
+    width: 80%;
+  }
+
+  .contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  /* ==========================================================================
+   FAQ Page
+   ========================================================================== */
+
+  .faq .content-wrapper {
+    justify-content: space-between;
+  }
+
+  .faq-content {
+    flex-basis: 45%;
+  }
+
+  .faq h2 {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  /*Desktop styles here*/
 }
 
 @media print,
