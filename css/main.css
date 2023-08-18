@@ -211,6 +211,10 @@ footer {
   background-color: #202322;
 }
 
+footer p {
+  margin: 0;
+}
+
 footer .content-wrapper {
   width: 55%;
 }
@@ -243,7 +247,7 @@ footer .social-icons p i {
   font-size: 1.3125em;
 }
 
-footer .copywright {
+footer .copyright {
   margin: 20px 0;
 }
 
@@ -272,7 +276,7 @@ footer .copywright {
 aside {
   display: flex;
   justify-content: center;
-  background-color: #3a3a3a;
+  background-color: #527158;
 }
 
 aside .form {
